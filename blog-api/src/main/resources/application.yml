@@ -1,0 +1,39 @@
+server:
+  port: 8888
+
+
+  #rocketmq配置
+rocketmq:
+  name-server: 192.168.19.134:9876
+  producer:
+    group: blog_group # 生产者所属组（可以组成集群，提高效率）
+spring:
+  application:
+    name: miemiehoho_blog
+  datasource:
+    url: jdbc:mysql://192.168.19.134:3306/blog?useUnicode=true&characterEncoding=UTF-8&serverTimeZone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: 192.168.19.134
+    port: 6379
+  # 上传文件总的最大值
+  servlet:
+    multipart:
+      max-request-size: 20MB
+      # 单个文件最大值
+      max-file-size: 2MB
+mybatis-plus:
+  # Mapper
+  mapper-locations:
+    classpath*:/mapper/**Mapper.xml
+  # 打印日志
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    # 数据库表前缀
+    db-config:
+      table-prefix: ms_
+
+
