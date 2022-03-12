@@ -19,11 +19,11 @@ import org.springframework.web.multipart.MultipartFile;
 @Component
 public class QiniuUtils {
 
-    public static final String url = "http://r5hhpeve0.hn-bkt.clouddn.com/";
+    public static final String url = "http://rsdfq1peve0.hn-bkt.clouddn.com/";
 
-    @Value("0HxChVJ4sndy0iHOKa8mIFa_r59lMFOB-pBTvN4b")
+    @Value("0HxChVJ4sndy0sadfsadf234MFOB-pBTvN4b")
     private String accessKey;
-    @Value("Nq-T-b8JHZTEgXPrNQITpRmWqLcsRSJlyOQjDnbn")
+    @Value("Nqasdfb8JasdfsdfsRSJlyOQjDndafsn")
     private String secretKey;
     @Value("blog-miemiehoho-com")
     private String bucket;
